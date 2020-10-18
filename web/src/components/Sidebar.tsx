@@ -5,13 +5,14 @@ import { useHistory } from 'react-router-dom';
 import mapMarkerImg from '../images/map-marker.svg';
 
 import '../styles/components/sidebar.css';
+import '../styles/components/animations.css';
 
 export default function Sidebar() {
 
     const { goBack } = useHistory();
     
     return (
-        <aside className="app-sidebar">
+        <aside className="animate-right app-sidebar">
             <img src={mapMarkerImg} alt="Happy" />
 
             <footer>

@@ -27,7 +27,7 @@ function OrphanagesMap(){
 
     return(
         <div id="page-map">
-            <aside>
+            <aside className="animate-right">
                 <header>
                     <img src={mapMarkerImg} alt="Happy"/>
 
@@ -45,6 +45,7 @@ function OrphanagesMap(){
                 center={[-27.2092052, -49.6401092]}
                 zoom={15}
                 style={{ width: '100%', height: '100%' }}
+                className="animate-appear"
             >
                 <TileLayer
                     url={`https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}
@@ -65,7 +66,7 @@ function OrphanagesMap(){
                 })}
             </Map>
 
-            <Link to="/orphanages/create" className="create-orphanage">
+            <Link to="/orphanages/create" className="create-orphanage animate-up">
                 <FiPlus size={32} color="#FFF"/>
             </Link>
         </div>

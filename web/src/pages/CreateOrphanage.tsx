@@ -10,6 +10,7 @@ import mapIcon from "../utils/mapIcon";
 import api from "../services/api";
 
 import '../styles/pages/create-orphanage.css';
+import '../styles/components/animations.css';
 
 export default function CreateOrphanage() {
   const history = useHistory();
@@ -70,9 +71,7 @@ export default function CreateOrphanage() {
 
     await api.post('orphanages', data);
 
-    alert('Cadastro realizado com sucesso!');
-
-    history.push('/app');
+    history.push('/orphanage-success');
   }
   
   return (
@@ -80,7 +79,7 @@ export default function CreateOrphanage() {
      
       <Sidebar/>
 
-      <main>
+      <main className="animate-appear">
         <form onSubmit={handleSubmit} className="create-orphanage-form">
           <fieldset>
             <legend>Dados</legend>

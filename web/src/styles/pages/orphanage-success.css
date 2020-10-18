@@ -1,0 +1,49 @@
+#page-success{
+    width: 100vw;height: 100vh;
+    background: #37C77F;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#page-success .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#page-success h1 {
+    font-weight: 800;
+    font-size: 5rem;
+
+    animation-delay: 100ms;
+}
+
+#page-success p{
+    font-size: 1.5rem;
+    margin-top: 2rem;
+
+    animation-delay: 150ms;
+}
+
+#page-success .enter-app{
+    background: #31B272;
+    color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.1rem;
+    padding: 25px;
+    border-radius: 20px;
+    margin-top: 5rem;
+
+    transition: .2s;
+    animation-delay: 200ms;
+}
+
+#page-success .enter-app:hover{
+    background: #3BD689;
+}
+
+#page-success .content img {
+    animation-delay: 150ms
+}
